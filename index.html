@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Astrology Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkle"></div>
+
+  <main class="page">
+    <header class="hero">
+      <span class="hero-icon" aria-hidden="true">✦</span>
+      <h1>AI Astrology Prediction</h1>
+      <p>Share your birth details for a personalized cosmic insight.</p>
+    </header>
+
+    <div class="container">
+      <form id="astroForm" class="form">
+        <div class="form-row form-row--double">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="e.g. Jane Doe" required>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row form-row--triple">
+          <div class="field">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+          </div>
+          <div class="field">
+            <label for="tob">Time of Birth <span class="optional">(optional)</span></label>
+            <input type="time" id="tob">
+          </div>
+          <div class="field">
+            <label for="gender">Gender <span class="optional">(optional)</span></label>
+            <select id="gender">
+              <option value="">Choose…</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="place">Place of Birth</label>
+            <input type="text" id="place" placeholder="City, Country" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="focus">Area of Focus</label>
+            <select id="focus" required>
+              <option value="">What would you like insight on?</option>
+              <option value="Career">Career</option>
+              <option value="Health">Health</option>
+              <option value="Relationship">Relationship</option>
+              <option value="Finance">Finance</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span class="btn-text">Get Prediction</span>
+          <span class="btn-icon" aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <div id="result" class="result"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
