@@ -24,7 +24,7 @@ document.getElementById("astroForm").addEventListener("submit", async function (
 
   const resultEl = document.getElementById("result");
   try {
-    const response = await fetch("https://mayankshringi.app.n8n.cloud/webhook/5b0a9ceb-f690-4ebb-87e9-d7a035ccc782", {
+    const response = await fetch("https://mayankshringi.app.n8n.cloud/webhook/8ca8548b-49a2-409f-bc05-86034b2bbb47", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -50,4 +50,5 @@ document.getElementById("astroForm").addEventListener("submit", async function (
       "⚠️ Network error. Please try later.";
   }
 });
+
 
